@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final - Merienda Light</title>
+  <style>
+    /* ----- ESTILOS GENERALES ----- */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+      color: #3e2723;
+    }
+
+    header {
+      background-color: #d7b89c;
+      color: white;
+      text-align: center;
+      padding: 25px 0;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    nav {
+      background-color: #f2e3d5;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #3e2723;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #8d6e63;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      background-image: url('cafeteria.jpg'); /* Puedes cambiar esta imagen */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 120px 20px;
+    }
+
+    .hero h1 {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 15px 25px;
+      border-radius: 10px;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+    }
+
+    .item {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .item h3 {
+      margin-top: 10px;
+      color: #6d4c41;
+    }
+
+    footer {
+      background-color: #d7b89c;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    /* Ajuste para celulares */
+    @media (max-width: 600px) {
+      .hero {
+        padding: 80px 15px;
+      }
+      header h1 {
+        font-size: 1.6em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <h1>Proyecto Final - Merienda Light ☕</h1>
+    <p>Cafetería moderna en San Francisco de Macorís</p>
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#menu">Menú</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- SECCIÓN PRINCIPAL -->
+  <section class="hero" id="inicio">
+    <h1>Bienvenido a Merienda Light</h1>
+    <p>Sabores únicos, ambiente acogedor y la mejor experiencia cafetera.</p>
+  </section>
+
+  <!-- SECCIÓN MENÚ -->
+  <section id="menu">
+    <h2>Nuestro Menú</h2>
+    <div class="menu">
+      <div class="item">
+        <img src="cafe.jpg" alt="Café Latte">
+        <h3>Café Latte</h3>
+        <p>Suave, cremoso y preparado con granos seleccionados.</p>
+      </div>
+      <div class="item">
+        <img src="postre.jpg" alt="Postres Caseros">
+        <h3>Postres Caseros</h3>
+        <p>El toque dulce perfecto para acompañar tu café.</p>
+      </div>
+      <div class="item">
+        <img src="smoothie.jpg" alt="Smoothie Natural">
+        <h3>Smoothies Naturales</h3>
+        <p>Refrescantes, saludables y 100% frutas naturales.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN NOSOTROS -->
+  <section id="nosotros">
+    <h2>Sobre Nosotros</h2>
+    <p>
+      En <strong>Merienda Light</strong> creemos que cada taza de café cuenta una historia. 
+      Nuestro objetivo es ofrecer productos frescos, de alta calidad, 
+      en un ambiente moderno y acogedor que invita a disfrutar cada momento.
+    </p>
+  </section>
+
+  <!-- SECCIÓN CONTACTO -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>📍 San Francisco de Macorís, República Dominicana</p>
+    <p>📞 (809) 555-1234</p>
+    <p>📧 contacto@meriendalight.com</p>
+  </section>
+
+  <!-- PIE DE PÁGINA -->
+  <footer>
+    <p>© 2025 Proyecto Final - Merienda Light | Todos los derechos reservados</p>
+  </footer>
+
+</body>
+</html>
